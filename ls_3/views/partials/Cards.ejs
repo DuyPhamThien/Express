@@ -1,0 +1,17 @@
+<% var card %>
+ <div class="container  mt-3">
+   <div class="row">
+    <% for(var i = 0; i < card.src.length; ++i) {%>
+      <div class=" col-lg-4 col-sm-6  d-flex  mt-3 cards"  >
+        <div><img src=<%=card.src[i]  %>></div>
+        <div class="ml-3 caption" >
+          <h5 ><%=card.h5[i]  %></h5>
+          <p ><%=card.p[i]  %></p>
+        </div>
+      </div> 
+    <% } %>
+
+   </div>
+
+</div>
+

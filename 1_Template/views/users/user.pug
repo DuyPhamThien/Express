@@ -1,0 +1,8 @@
+h1 Chao 
+form(action='/user/search',method='GET')
+    input(type='text' name='q')
+    button Search
+ul
+    each u in users
+        li= u.name
+a(href='/user/create') New

@@ -1,0 +1,24 @@
+
+<% var card %>
+
+ <div class="container ">
+  <%- include('../partials/Title' , {title1 : 'Recent work'}) %>
+  <div class="row">
+    <% for(var i = 0; i < card.src.length; ++i) {%>
+      <div class=" col-lg-3 col-sm-6 card"  >
+        <img class="card-img-top"  height="200px"   src=<%=card.src[i]  %>  >  
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: 30px;"><%=card.h5[i]  %></h5>
+          <% if (typeof card.p[i] != "undefined") {%>
+            <p class="card-text" style="font-size: 25px"><%=card.p[i]  %></p>
+          <% } %>  
+         
+
+        </div>
+      </div>
+      <% } %>
+  </div>
+  <h1><%=lang('hello')%></h1>
+</div>
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head') %>
+</head>
+<body>
+    <%- include('../partials/Nav') %>
+
+    <%- include('../partials/Slider') %>
+
+    <%- include('../partials/Hightline') %>
+
+    <%- include('../partials/Cards' , 
+    { 
+        card : { src :[ "/logo/2.jpg" , "/logo/2.jpg" ,"/logo/2.jpg" ,"/logo/2.jpg","/logo/2.jpg","/logo/2.jpg","/logo/2.jpg","/logo/2.jpg","/logo/2.jpg"] ,
+          h5: ["Analytics and Automation","Card title2","Card title3","Card title4","Card title5","Card title6","Card title7","Card title8","Card title9"],
+          p:["Simplify operations with automation. Best service is provided through network automation in faster and more effective way.","hahahah2","hahahah3","hahahah4","hahahah5","hahahah6","hahahah7","hahahah8","hahahah9"] } 
+     }) %>
+
+    <%- include('../partials/recentwork' ,
+    {
+        card : { src :[ "/logo/2.jpg" , "/logo/2.jpg" ,"/logo/2.jpg","/logo/2.jpg"] ,
+          h5: ["Card title1","Card title2","Card title3","Card title4"],
+          p :["hahahah1","hahahah2","hahahah3","hahahah4"]
+        }
+     }) %>
+
+
+
+    <%- include('../partials/Welcom') %>
+
+
+    <%- include('../partials/Our') %>
+
+    <%- include('../partials/footer') %>
+    <% global.b ='acsdcd' %>
+
+    
+    
+    <script src='/jquery-3.4.1.min.js'></script>
+    <script src='/bootstrap.min.js'></script>
+   
+
+</body>
+</html>

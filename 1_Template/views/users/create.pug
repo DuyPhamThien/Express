@@ -1,0 +1,7 @@
+extends ../layout/head
+block content
+    h1 Create new user
+    form(action='/user/create',method='POST')
+        label Name
+        input(type="text" name='name')
+        button Create
